@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    div {
+            font-size: 200% 
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Dice Project Game </h1>
+
+
+    <label for="dice">Choose Dice:</label>
+    <select name="dice" id="dice">
+        <option value="1">D1</option>
+        <option value="2">D2</option>
+        <option value="3">D3</option>
+        <option value="4">D4</option>
+    </select>
+    <button onclick="dice()">Roll Dice</button>
+   
+    <h1>Result</h1>
+    <div name="result" id="result"></div>
+
+    <script>
+        function dice() {
+            var result = Math.floor(Math.random() * 6) + 1;
+            document.getElementById("result").innerText=result
+        }
+
+    </script>
+</body>
+
+</html>
+
