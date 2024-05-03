@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <style>
-    div {
-            font-size: 200% 
+        div {
+            font-size: 200%
         }
     </style>
 </head>
+
 <body>
 
     <h1>Dice Project Game </h1>
@@ -20,18 +22,10 @@
         <option value="4">D4</option>
     </select>
     <button onclick="dice()">Roll Dice</button>
-   
+
     <h1>Result</h1>
     <div name="result" id="result"></div>
 
-    <script>
-        function dice() {
-            var result = Math.floor(Math.random() * 6) + 1;
-            document.getElementById("result").innerText=result
-        }
-
-    </script>
 </body>
 
 </html>
-
